@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potter Tech | Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<div class="container">
+
+    <div class="auth-card">
+
+        <div class="logo">
+            <div class="logo-circle">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h1>Potter Tech</h1>
+
+            <p>
+                Secure Access Portal
+            </p>
+        </div>
+
+        <!-- Login Form -->
+
+        <form id="loginForm" class="form active">
+
+            <h2>Welcome Back</h2>
+
+            <p class="subtitle">
+                Sign in to continue
+            </p>
+
+            <div class="input-group">
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                    type="text"
+                    placeholder="Username or Email"
+                    required>
+            </div>
+
+            <div class="input-group">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Password"
+                    required>
+
+                <span class="toggle-password">
+                    <i class="fa-solid fa-eye"></i>
+                </span>
+
+            </div>
+
+            <div class="options">
+
+                <label>
+
+                    <input type="checkbox">
+
+                    Remember me
+
+                </label>
+
+                <a href="#">Forgot Password?</a>
+
+            </div>
+
+            <button type="submit" class="btn">
+                Sign In
+            </button>
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <div class="social-login">
+
+                <button type="button">
+                    <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button">
+                    <i class="fab fa-apple"></i>
+                </button>
+
+                <button type="button">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+
+            </div>
+
+            <p class="switch-text">
+
+                Don't have an account?
+
+                <span id="showRegister">
+                    Create one
+                </span>
+
+            </p>
+
+        </form>
+
+        <!-- Register Form -->
+
+        <form id="registerForm" class="form">
+
+            <h2>Create Account</h2>
+
+            <p class="subtitle">
+                Join Potter Tech today
+            </p>
+
+            <div class="name-row">
+
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="First Name" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+
+            </div>
+
+            <div class="input-group">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" placeholder="Phone Number">
+            </div>
+
+            <div class="input-group">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password"
+                placeholder="Password"
+                required>
+            </div>
+
+            <div class="input-group">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password"
+                placeholder="Confirm Password"
+                required>
+            </div>
+
+            <button class="btn">
+                Create Account
+            </button>
+
+            <p class="switch-text">
+
+                Already have an account?
+
+                <span id="showLogin">
+                    Sign In
+                </span>
+
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
